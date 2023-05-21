@@ -9,10 +9,8 @@
 	<link rel="stylesheet" href=""https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/normalize.css">
-
 	<title>NaturalSpeech 2</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
@@ -28,7 +26,7 @@
 	<h1>NaturalSpeech 2:</h1>
         <h3>Latent Diffusion Models are Natural and Zero-Shot Speech and Singing Synthesizers</h3>
         <p class="fst-italic mb-0">
-			<br> Anonymous Authors <br>
+			<br> Anonymous Authors <br><br><br>
         </p>
 	</div>
 	<p>
@@ -212,12 +210,6 @@ novel zero-shot singing synthesis with only a speech prompt.
 				<td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audio/vctk_examples/case9/yourtts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 				<td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audio/vctk_examples/case9/ns.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 			</tr>
-			<td style="text-align: left;vertical-align:middle;width: 500px">Every aspect of our play was first class.</td>
-				<td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audio/vctk_examples/case10/reference.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-				<td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audio/vctk_examples/case10/gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-				<td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audio/vctk_examples/case10/yourtts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-				<td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audio/vctk_examples/case10/ns.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-			</tr>
 			</tbody>
 			</table>
 		</div>
@@ -276,100 +268,107 @@ novel zero-shot singing synthesis with only a speech prompt.
 
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-	<h2 id="sr-samples" style="text-align: center;">Singing Samples </h2>
+	<h2 id="sr-samples" style="text-align: center;">Singing Samples - &laquoYesterday Once More&raquo</h2>
+	<script src="lyric.js"></script>
 	<div class="table-responsive pt-3">
-		<!-- <h2 id="sr-samples" style="text-align: center;">Text & Audio to be inferred</h2> -->
+		
 		<table class="table table-hover pt-2"> 
 		<thead>
 			<tr>
-				<th style="text-align: center">Text</th>
-				<th style="text-align: center">Prompt Type</th>
-				<th style="text-align: center">Prompt</th>
+				<th style="text-align: center">Lyric</th>
+				<th style="text-align: center">Speech Prompt</th>
 				<th style="text-align: center">NaturalSpeech 2</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td style="text-align: center;vertical-align:middle;width: 500px">So listen very carefully.</td>
-				<td style="text-align: center;vertical-align:middle;width: 300px">Speech</td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/libritts/ref_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/libritts/2_text2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center;vertical-align:middle;width: 300px"><div class="lyric"></div></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/ref.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio class="player" controls="controls" style="width: 280px;"><source src="audio/singing/infer.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 			</tr>		
-
-			<tr>
-				<td style="text-align: center;vertical-align:middle;width: 500px">So listen very carefully.</td>
-				<td style="text-align: center;vertical-align:middle;width: 300px">Singing</td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/nhss/en0004b/ref_singing.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/nhss/en0004b/singing_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-			</tr>
-			
 		</tbody>
 		</table>
 	</div>
-
-	
-	<div class="table-responsive pt-3">
-		<table class="table table-hover pt-2"> 
-		<thead>
-			<tr>
-				<th style="text-align: center">Text</th>
-				<th style="text-align: center">Prompt Type</th>
-				<th style="text-align: center">Prompt</th>
-				<th style="text-align: center">NaturalSpeech 2</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td style="text-align: center;vertical-align:middle;width: 500px">To keep it all in like you do.</td>
-				<td style="text-align: center;vertical-align:middle;width: 300px">Speech</td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/libritts/ref_4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/libritts/4_text3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-			</tr>
-
-			<tr>
-				<td style="text-align: center;vertical-align:middle;width: 500px">To keep it all in like you do.</td>
-				<td style="text-align: center;vertical-align:middle;width: 300px">Singing</td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/nhss/945/ref_singing.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/nhss/945/singing_3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-			</tr>
-			
-		</tbody>
-		</table>
-	</div>
-
-	<div class="table-responsive pt-3">
-		<table class="table table-hover pt-2"> 
-		<thead>
-			<tr>
-				<th style="text-align: center">Text</th>
-				<th style="text-align: center">Prompt Type</th>
-				<th style="text-align: center">Prompt</th>
-				<th style="text-align: center">NaturalSpeech 2</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td style="text-align: center;vertical-align:middle;width: 500px">In the middle of the night.</td>
-				<td style="text-align: center;vertical-align:middle;width: 300px">Speech</td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/libritts/ref_3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/libritts/3_text4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-			</tr>
-
-			<tr>
-				<td style="text-align: center;vertical-align:middle;width: 500px">In the middle of the night.</td>
-				<td style="text-align: center;vertical-align:middle;width: 300px">Singing</td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/nhss/2259/ref_singing.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-				<td style="text-align: center"><audio controls="controls" style="width: 280px;"><source src="audio/singing/nhss/2259/singing_4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-			</tr>
-			
-
-		</tbody>
-		</table>
-	</div>
-
 </div>
 
 
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="sr-samples" style="text-align: center;">Voice Conversion Samples</h2>
+	<script src="lyric.js"></script>
+	<div class="table-responsive pt-3">
+		
+		<table class="table table-hover pt-2"> 
+		<thead>
+			<tr>
+				<th style="text-align: center">Text</th>
+				<th style="text-align: center">Prompt</th>
+				<th style="text-align: center">Source</th>
+				<th style="text-align: center">NaturalSpeech 2</th>
+			</tr>
+		</thead>
+		<tbody>	
+			<tr>
+				<td style="text-align: left;vertical-align:middle;width: 500px">Traditions to overcome.</td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/vc/case1/ref.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/vc/case1/src.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/vc/case1/denoised.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+				<td style="text-align: left;vertical-align:middle;width: 500px">The children the most blood-curdling ideas, to hate God, for instance.</td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/vc/case2/ref.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/vc/case2/src.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/vc/case2/denoised.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>	
+			<tr>
+				<td style="text-align: left;vertical-align:middle;width: 500px">Oh, Bartley, that old about my being hard!</td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/vc/case3/ref.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/vc/case3/src.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/vc/case3/denoised.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+</div>
+
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="sr-samples" style="text-align: center;">Speech Enhancement Samples</h2>
+	<script src="lyric.js"></script>
+	<div class="table-responsive pt-3">
+		
+		<table class="table table-hover pt-2"> 
+		<thead>
+			<tr>
+				<th style="text-align: center">Prompt</th>
+				<th style="text-align: center">Source</th>
+				<th style="text-align: center">Ground Truth</th>
+				<th style="text-align: center">NaturalSpeech 2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case1/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case1/noised.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case1/gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case1/denoised.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>	
+			<tr>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case2/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case2/noised.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case2/gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case2/denoised.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>	
+			<tr>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case3/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case3/noised.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case3/gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				<td style="text-align: center"><audio controls="controls" style="width: 250px;"><source src="audio/se/case3/denoised.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+</div>
 
 
 
@@ -383,7 +382,7 @@ novel zero-shot singing synthesis with only a speech prompt.
 		Ethics Statement
 	</h2>
 	<p>
-		Since NaturalSpeech2 could synthesize speech that maintains speaker identity, it may carry potential risks in misuse of the model, such as spoofing voice identification or impersonating a specific speaker. We conducted the experiments under the assumption that the user agree to be the target speaker in speech synthesis. If the model is generalized to unseen speakers in the real world, it should include a protocol to ensure that the speaker approves the use of their voice and a synthesized speech detection model.
+		Since NaturalSpeech 2 could synthesize speech that maintains speaker identity, it may carry potential risks in misuse of the model, such as spoofing voice identification or impersonating a specific speaker. We conducted the experiments under the assumption that the user agree to be the target speaker in speech synthesis. If the model is generalized to unseen speakers in the real world, it should include a protocol to ensure that the speaker approves the use of their voice and a synthesized speech detection model.
 	</p>
 </div>
 
