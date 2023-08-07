@@ -118,7 +118,9 @@ window.onload = function main() {
 
     const dom = {
         lyric: document.querySelector(".lyric"),
-        player: document.querySelector(".player")
+        player: document.querySelector(".player"),
+        lyric2: document.querySelector(".lyric2"),
+        player2: document.querySelector(".player2"),
     };
     dom.lyric.innerHTML = lyrics[0].text;
     dom.player.ontimeupdate = () => {
@@ -128,6 +130,15 @@ window.onload = function main() {
         if (index == null) return;
 
         dom.lyric.innerHTML = lyrics[index].text;
+    };
+    dom.lyric2.innerHTML = lyrics[0].text;
+    dom.player2.ontimeupdate = () => {
+        const time = dom.player2.currentTime;
+        const index = syncLyric(lyrics, time);
+
+        if (index == null) return;
+
+        dom.lyric2.innerHTML = lyrics[index].text;
     };
 
 };
